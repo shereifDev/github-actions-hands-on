@@ -1,1 +1,14 @@
 
+name: Exercise 2
+
+on:
+  push:
+    branches:
+      - "feature/**"
+
+jobs:
+  job_1:
+    runs-on: ubuntu-latest
+    steps:
+      - name: print msg
+        run: echo "ok"
