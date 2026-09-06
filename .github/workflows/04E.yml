@@ -1,1 +1,14 @@
+name: Exercise 4 
 
+on: 
+  workflow_dispatch: 
+  
+env:
+  AUTHER: sherif 
+  
+jobs:
+  job_1: 
+    runs-on: ubuntu-latest
+    steps:
+      - name: print the value of env variable 
+        run: echo "the Auther is ${{env.AUTHER}}
