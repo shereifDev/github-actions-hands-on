@@ -10,7 +10,7 @@ jobs:
       - name: clone my repo that contains the code I need to compile it
         uses: actions/checkout@v7.0.1
       - name: go to dir that contains my code 
-        run:  cd ./usedFiles 
+        run:  cd usedFiles 
       - name: compile the code using gcc compiler 
       # run: gcc main.c -o app
         run: ls 
