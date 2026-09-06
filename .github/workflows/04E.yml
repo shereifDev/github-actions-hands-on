@@ -11,4 +11,4 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: print the value of env variable 
-        run: echo "the Auther is ${{env.AUTHER}}
+        run: echo "the Auther is ${{env.AUTHER}}"
