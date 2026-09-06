@@ -1,1 +1,1 @@
-# github-actions-hands-on
+# github-action-hands-on
