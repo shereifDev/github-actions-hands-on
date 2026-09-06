@@ -12,7 +12,7 @@ jobs:
       - name: go to dir that contains my code 
         run:  cd ./usedFiles 
       - name: compile the code using gcc compiler 
-      #  run: gcc main.c -o app
-         run: ls 
+      # run: gcc main.c -o app
+        run: ls 
       #- name: run the compiled program 
       #  run: ./app 
