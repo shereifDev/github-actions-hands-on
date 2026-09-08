@@ -3,11 +3,15 @@ name: Exercise 8
 on: 
   workflow_dispatch: 
 
+env:
+  NUM:
+  
 jobs:
   job_1:
     runs-on: ubuntu-latest
     steps:
       - name: generate a random num
-        run: num=20 
+        run: num=20 && NUM=num
+        
       - name: print the random number 
-        run: echo "${num}"
+        run: echo "${{env.NUM}}"
