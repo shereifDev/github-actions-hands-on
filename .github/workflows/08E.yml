@@ -8,7 +8,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: generate a random num and store it in a env var 
-        run:  echo "NUM=$RANDOM" >> $GITHUB_ENV
+        run: | 
+          RANDOM_NUM=$RANDOM
+          echo "NUM=$RANDOM_NUM" >> $GITHUB_ENV
         
       - name: print the random number 
         run: echo "the random num is ${{env.NUM}}"
