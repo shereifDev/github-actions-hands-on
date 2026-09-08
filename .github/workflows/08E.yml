@@ -3,15 +3,12 @@ name: Exercise 8
 on: 
   workflow_dispatch: 
 
-env:
-  NUM:
-  
 jobs:
   job_1:
     runs-on: ubuntu-latest
     steps:
-      - name: generate a random num
-        run: num=20 && NUM=num
+      - name: generate a random num and store it in a env var 
+        run:  echo "NUM=$RANDOM" >> $GITHUB_ENV
         
       - name: print the random number 
-        run: echo "${{env.NUM}}"
+        run: echo "the random num is ${{env.NUM}}"
