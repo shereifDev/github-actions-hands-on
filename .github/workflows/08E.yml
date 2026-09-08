@@ -1,1 +1,13 @@
+name: Exercise 8
 
+on: 
+  workflow_dispatch: 
+
+jobs:
+  job_1:
+    runs-on: ubuntu-latest
+    steps:
+      - name: generate a random num
+        run: num=20 
+      - name: print the random number 
+        run: echo "${num}"
